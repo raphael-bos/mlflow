@@ -68,4 +68,5 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
+        mlflow.set_tag('mlflow.user', 'raphael-bos')
         mlflow.sklearn.log_model(lr, "model")
